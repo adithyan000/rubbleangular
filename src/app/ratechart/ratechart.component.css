@@ -1,0 +1,57 @@
+.textcolor{
+    color: #67DDB0;
+}
+.head{
+   text-align: center;
+    padding-top: 30px;
+    font-size: 35px;
+    font-weight: 400;
+}
+.category{
+    height: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    margin-top: -38px;
+   
+
+   
+}
+.cards2{
+    width: 60%;
+    border-radius: 20px;
+    margin-left: 250px;
+    height: 40px;
+    box-shadow: 1px 0px 13px  #6969694f;
+
+}
+.material-icons{
+    /* margin-left: 750px; */
+    color: #67DDB0;
+    font-size: 35px;
+    padding-left: 50%;
+    padding-left: 94%;
+    
+}
+.cards2:hover{
+    color: #67DDB0;
+    width: 60%;
+    border-radius: 20px;
+    margin-left: 250px;
+    height: 300px;
+    box-shadow: 1px 0px 13px  #67DDB0;
+    
+
+    
+    /* background-color: #67ddb065; */
+}
+.mat-form-field + .mat-form-field {
+    margin-left: 8px;
+   
+}
+.categry{
+    text-align: right;
+    color: rgb(255, 255, 255);
+}

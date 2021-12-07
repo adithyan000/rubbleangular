@@ -1,0 +1,74 @@
+<mat-sidenav-container class="sidenav-container" style="padding-top: -60px;">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+      <img src="assets/icon.jpg" style="width: 52px; margin-left: 15px;">
+    <mat-toolbar style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: 400; font-size: 25px; margin-left: 45px; margin-top: -66px;"><span class="textcolor">R</span>ubble</mat-toolbar>
+    <mat-divider></mat-divider>
+    <mat-nav-list><br>
+      <span class="material-icons">
+        home
+        </span>
+      <!-- <img src="assets/home.png" class="navicon" style="width: 25px; color: #67DDB0; "> -->
+      <a mat-list-item routerLink="home" class="navi1" style="font-weight: 500;">Home</a>
+      <mat-divider></mat-divider><br>
+      <span class="material-icons">
+        group_work
+        </span>
+      <!-- <img src="assets/process.png" class="navicon" style="width: 25px; margin-top: 10px; "> -->
+      <a mat-list-item routerLink="workprocess" class="navi" style="font-weight: 500; margin-top: -40px;">Work Process</a>
+      <mat-divider></mat-divider><br>
+      <span class="material-icons">
+        price_change
+        </span>
+      <!-- <img src="assets/rate.png" class="navicon" style="width: 25px; margin-top: 10px;"> -->
+      <a mat-list-item routerLink="ratechart" class="navi" style="font-weight: 500; margin-top: -40px;">Rate Chart</a>
+      <mat-divider></mat-divider><br>
+      <span class="material-icons">
+        cleaning_services
+        </span>
+      <!-- <img src="assets/service.png" class="navicon" style="width: 25px; margin-top: 10px; "> -->
+      <a mat-list-item routerLink="service" class="navi" style="font-weight: 500; margin-top: -40px;">Services</a>
+      <mat-divider></mat-divider><br>
+      <span class="material-icons">
+        call
+        </span>
+      <!-- <img src="assets/contact.png" class="navicon" style="width: 25px; margin-top: 10px;"> -->
+      <a mat-list-item routerLink="reachus" class="navi" style="font-weight: 500; margin-top: -40px;">Reach Us</a>
+      <mat-divider></mat-divider><br>
+      <span class="material-icons">
+        account_circle
+        </span>
+      <!-- <img src="assets/login.png" class="navicon" style="width: 25px; margin-top: 10px;"> -->
+      <a mat-list-item routerLink="login" class="navi" style="font-weight: 500; margin-top: -40px;">Log In</a>
+      <mat-divider></mat-divider><br>
+
+      <span class="material-icons">
+        feedback
+        </span>
+      <!-- <img src="assets/login.png" class="navicon" style="width: 25px; margin-top: 10px;"> -->
+      <a mat-list-item routerLink="paginator" class="navi" style="font-weight: 500; margin-top: -40px;">Feed Back</a>
+      <mat-divider></mat-divider>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    
+    
+   
+    <!-- <mat-toolbar color="primary" class="nav">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>rubble</span>
+    </mat-toolbar>
+  -->
+    <!-- Add Content Here -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

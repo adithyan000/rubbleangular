@@ -1,0 +1,12 @@
+.textcolor{
+    color: #67DDB0;
+}
+.head{
+   text-align: center;
+    padding-top: 30px;
+    font-size: 35px;
+    font-weight: 400;
+}
+.mat-form-field {
+    margin-right: 12px;
+  }

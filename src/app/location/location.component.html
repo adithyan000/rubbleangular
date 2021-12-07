@@ -1,0 +1,39 @@
+
+<div class="bg">
+    <div class="section">
+
+        <h1 class="head"><span class="textcolor">Select</span>    your location</h1><br><br><br><br>
+
+        
+        <input type="text" class="name" placeholder="Tamil Nadu">
+        <input type="text" class="name2" placeholder="Chennai">
+
+
+        
+            <input  class="name3" type="text"
+                   placeholder="Search for a street"
+                   
+                   [matAutocomplete]="auto">
+            <mat-autocomplete #auto="matAutocomplete">
+              <mat-option *ngFor="let street of filteredStreets | async" [value]="street">
+                {{street}}
+              </mat-option>
+            </mat-autocomplete>
+         
+
+          
+        <!-- <input type="search" class="name3" placeholder="Search your location" > -->
+        <button mat-button (click)="openDialog()"  class="btn2" >SUBMIT</button>
+        
+        <img style="width: 37%; margin-left: 390px;" src="assets/current.png">
+        
+
+
+
+
+    </div>
+    
+
+
+
+</div>
